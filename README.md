@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/jesusgsdev/whatsnewinjava9.svg?branch=master)](https://travis-ci.org/jesusgsdev/whatsnewinjava9)
 # What's new in Java 9?
 
 ## Collections
