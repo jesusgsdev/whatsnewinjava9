@@ -38,7 +38,13 @@ Additions to Optional:
 
 ## Interfaces
 
-Support for private methods within an interface. Checkout `PricedObject` and `InterfaceImprovements` tests.
+Support for private methods within an interface. Checkout `PricedObject` and `InterfaceReviewTest` tests.
+
+# LocalDate
+
+Additions to LocalDate:
+
+- `Stream<LocalDate> datesUntil(LocalDate endExclusive, Period step)`
 
 ### References
 

@@ -1,9 +1,9 @@
-package com.jesusgsdev;
+package com.jesusgsdev.helpers;
 
 import java.util.Set;
 import java.util.stream.Stream;
 
-public class Book implements PricedObject{
+public class Book implements PricedObject {
 
     public final String title;
     public final Set<String> authors;

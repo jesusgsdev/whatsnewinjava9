@@ -1,5 +1,7 @@
 package com.jesusgsdev;
 
+import com.jesusgsdev.helpers.Book;
+
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Stream;

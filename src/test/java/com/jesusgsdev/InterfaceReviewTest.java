@@ -1,14 +1,13 @@
 package com.jesusgsdev;
 
+import com.jesusgsdev.helpers.Book;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @DisplayName("Test of Interface improvements")
-public class InterfaceImprovements {
+public class InterfaceReviewTest {
 
     @Test
     @DisplayName("Testing getPriceWithTax() being a default method in an interface that has a private method too")

@@ -1,8 +1,10 @@
 package com.jesusgsdev;
 
+import com.jesusgsdev.helpers.Book;
+
 import java.util.stream.Stream;
 
-import static com.jesusgsdev.Book.getBook;
+import static com.jesusgsdev.helpers.Book.getBook;
 
 public class OfNullableReview {
 
