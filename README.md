@@ -40,7 +40,7 @@ Additions to Optional:
 
 Support for private methods within an interface. Checkout `PricedObject` and `InterfaceReviewTest` tests.
 
-# LocalDate
+## LocalDate
 
 Additions to LocalDate:
 
