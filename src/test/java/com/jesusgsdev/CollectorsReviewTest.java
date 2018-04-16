@@ -41,7 +41,7 @@ public class CollectorsReviewTest {
 
         //Then
         assertEquals(1, authorsSellingForPrice.size());
-        assertEquals(20D, authorsSellingForPrice.keySet().stream().findFirst().get(), 0.0);
+        assertTrue(authorsSellingForPrice.keySet().stream().findFirst().get() == 20D);
         assertEquals(2, authorsSellingForPrice.values().stream().findFirst().get().size());
         assertTrue(authorsSellingForPrice.values().stream().findFirst().get().stream().anyMatch(a -> "Author A".equals(a)));
         assertTrue(authorsSellingForPrice.values().stream().findFirst().get().stream().anyMatch(a -> "Author B".equals(a)));
