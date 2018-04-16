@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@DisplayName("Test of StreamReview methods")
+@DisplayName("Test of FilesLinesReview methods")
 public class FilesLinesReviewTest {
 
     @Test
