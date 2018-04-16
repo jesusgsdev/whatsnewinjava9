@@ -35,3 +35,8 @@ Additions to Optional:
 - `void ifPresentOrElse(Consumer<T> action, Runnable emptyAction)`
 - `Optional<T> or(Supplier<Optional<T>> supplier)`
 - `Stream<T> stream()`
+
+### References
+
+- Java 9 Optional API Additions: http://www.baeldung.com/java-9-optional
+- What's new in Java 9: https://app.pluralsight.com/library/courses/java-9-whats-new
