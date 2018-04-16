@@ -19,7 +19,7 @@ public class StreamsReviewTest {
         Stream<String> blueColours = StreamsReview.newMethodTakeWhile(colours, "Blue");
 
         //Then
-        assertTrue(blueColours.count() == 3L); //Because there is only 3 blues
+        assertEquals(3L, blueColours.count()); //Because there is only 3 blues
     }
 
     @Test
@@ -32,7 +32,7 @@ public class StreamsReviewTest {
         Stream<String> blueColours = StreamsReview.newMethodDropWhile(colours, "Blue");
 
         //Then
-        assertTrue(blueColours.count() == 4L); //Because if we remove the Blue ones, 4 items remain
+        assertEquals(4L, blueColours.count()); //Because if we remove the Blue ones, 4 items remain
     }
 
 

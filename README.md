@@ -19,6 +19,11 @@ Initialize a List, Set or Map with less verbosity:
 
 ## Streams
 New methods:
-- `default Stream<T> takeWhile(Predicate<? super T> predicate)`
-- `default Stream<T> dropWhile(Predicate<? super T> predicate)`
-- `public static<T> Stream<T> ofNullable(T t)`
+- `Stream<T> takeWhile(Predicate<? super T> predicate)`
+- `Stream<T> dropWhile(Predicate<? super T> predicate)`
+- `<T> Stream<T> ofNullable(T t)`
+- `Stream<String> lines(Path path) throws IOException`
+
+New collectors methods:
+- `<T, A, R> Collector<T, ?, R> filtering(Predicate<? super T> predicate, Collector<? super T, A, R> downstream)`
+- `<T, U, A, R> Collector<T, ?, R> flatMapping(Function<? super T, ? extends Stream<? extends U>> mapper, Collector<? super U, A, R> downstream)`

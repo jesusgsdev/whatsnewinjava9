@@ -28,7 +28,7 @@ public class Book {
     }
 
     public static Book getBook(){
-        return new Book("The Book Number One", Set.of("Author A", "Auhor B"), 10D);
+        return new Book("The Book Number One", Set.of("Author A", "Author B"), 20D);
     }
 
     public static Stream<Book> getBooks(){
