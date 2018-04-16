@@ -12,8 +12,6 @@ public class OfNullableReview {
         Book book = getPossiblyNull(true);
         //Get an empty stream or a stream with authors depend on book is null or not
         Stream<String> authors = book == null ? Stream.empty() : book.authors.stream();
-        //Print out the name of the authors
-        authors.forEach(System.out::println);
 
         //Now in Java 9
         return Stream.ofNullable(getPossiblyNull(true)) //Get a stream of objects or of a null
@@ -26,8 +24,6 @@ public class OfNullableReview {
         Book book = getPossiblyNull(false);
         //Get an empty stream or a stream with authors depend on book is null or not
         Stream<String> authors = book == null ? Stream.empty() : book.authors.stream();
-        //Print out the name of the authors
-        authors.forEach(System.out::println);
 
         //Now in Java 9
         return Stream.ofNullable(getPossiblyNull(false)) //Get a stream of objects or of a null
