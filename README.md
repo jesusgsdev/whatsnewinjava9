@@ -36,6 +36,10 @@ Additions to Optional:
 - `Optional<T> or(Supplier<Optional<T>> supplier)`
 - `Stream<T> stream()`
 
+## Interfaces
+
+Support for private methods within an interface. Checkout `PricedObject` and `InterfaceImprovements` tests.
+
 ### References
 
 - Java 9 Optional API Additions: http://www.baeldung.com/java-9-optional

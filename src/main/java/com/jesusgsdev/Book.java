@@ -3,7 +3,7 @@ package com.jesusgsdev;
 import java.util.Set;
 import java.util.stream.Stream;
 
-public class Book {
+public class Book implements PricedObject{
 
     public final String title;
     public final Set<String> authors;
@@ -23,6 +23,7 @@ public class Book {
         return authors;
     }
 
+    @Override
     public double getPrice() {
         return price;
     }
