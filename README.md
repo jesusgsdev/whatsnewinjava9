@@ -27,3 +27,11 @@ New methods:
 New collectors methods:
 - `<T, A, R> Collector<T, ?, R> filtering(Predicate<? super T> predicate, Collector<? super T, A, R> downstream)`
 - `<T, U, A, R> Collector<T, ?, R> flatMapping(Function<? super T, ? extends Stream<? extends U>> mapper, Collector<? super U, A, R> downstream)`
+
+## Optionals
+
+Additions to Optional:
+
+- `void ifPresentOrElse(Consumer<T> action, Runnable emptyAction)`
+- `Optional<T> or(Supplier<Optional<T>> supplier)`
+- `Stream<T> stream()`
