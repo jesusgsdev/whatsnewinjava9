@@ -6,7 +6,7 @@ import static com.jesusgsdev.Book.getBook;
 
 public class OfNullableReview {
 
-    public void exampleOfNullableWhenBookIsNull(){
+    public static Stream<String> exampleOfNullableWhenBookIsNull(){
         //Before in Java 8
         //Get the Book as null
         Book book = getPossiblyNull(true);
@@ -16,12 +16,11 @@ public class OfNullableReview {
         authors.forEach(System.out::println);
 
         //Now in Java 9
-        Stream.ofNullable(getPossiblyNull(true)) //Get a stream of objects or of a null
-                .flatMap(b -> b.authors.stream()) //Flatmap the authors
-                .forEach(System.out::println); //Print out the name of the authors
+        return Stream.ofNullable(getPossiblyNull(true)) //Get a stream of objects or of a null
+                .flatMap(b -> b.authors.stream()); //Flatmap the authors
     }
 
-    public void exampleOfNullableWhenBookIsNotNull(){
+    public static Stream<String> exampleOfNullableWhenBookIsNotNull(){
         //Before in Java 8
         //Get the book as not null
         Book book = getPossiblyNull(false);
@@ -31,12 +30,11 @@ public class OfNullableReview {
         authors.forEach(System.out::println);
 
         //Now in Java 9
-        Stream.ofNullable(getPossiblyNull(false)) //Get a stream of objects or of a null
-                .flatMap(b -> b.authors.stream()) //Flatmap the authors
-                .forEach(System.out::println); //Print out the name of the authors
+        return Stream.ofNullable(getPossiblyNull(false)) //Get a stream of objects or of a null
+                .flatMap(b -> b.authors.stream()); //Flatmap the authors
     }
 
-    private Book getPossiblyNull(boolean isNull) {
+    private static Book getPossiblyNull(boolean isNull) {
         return isNull ? null : getBook();
     }
 
