@@ -46,6 +46,14 @@ Additions to LocalDate:
 
 - `Stream<LocalDate> datesUntil(LocalDate endExclusive, Period step)`
 
+## Process and ProcessHandle
+
+Extra classes to help managing process either created by Java or on the system.
+Examples of methods like:
+
+- `ProcessHandle.current().pid()`
+- `ProcessHandle.allProcesses()`
+
 ### References
 
 - Java 9 Optional API Additions: http://www.baeldung.com/java-9-optional
