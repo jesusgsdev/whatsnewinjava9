@@ -54,6 +54,39 @@ Examples of methods like:
 - `ProcessHandle.current().pid()`
 - `ProcessHandle.allProcesses()`
 
+## Flow API
+Provide interoperability for reactive projects like RxJava 2, Akka Streams and Spring 5.
+
+- `java.util.concurrent.Flow`
+
+There is no examples in the code for this API.
+
+## StackWalker
+
+It's a new stack inspection API. 
+Allows to handle specific StackFrames. There is not examples in the code.
+
+## Performance and Security Enhancements
+
+- G1 Garbage Collector default on Java 9
+    - Eden, Survivor and Tenured region within the Heap
+- String Performance
+    - Compact Strings: Lower memory usage and effective immediately without code changes
+    - String concatenation changes: Change concatenation translation strategy
+- Serialization
+    - Filter data before deserializing
+- TLS improvements: ALPN
+    - ALPN: Application Layer Protocol Negotiation
+    - Allows to select application layer protocol during TLS handshake
+    - DTLS 1.0/1.2: Datagram Transport Layer Security aligned with TLS 1.1/1.2
+    - OCSP Stapling: Online Certificate Status Protocol
+- SHA-1 Certificates Disabled
+    - SHA-1 is broken by collision attacks. Certificates using SHA-1 will be rejected
+    - SHA-3 support was added
+    
+There is no examples in the code for this improvements as they apply if you compile with Java 9.
+
+
 ### References
 
 - Java 9 Optional API Additions: http://www.baeldung.com/java-9-optional

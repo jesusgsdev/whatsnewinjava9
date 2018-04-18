@@ -13,11 +13,11 @@ public class OfNullableReview {
         //Get the Book as null
         Book book = getPossiblyNull(true);
         //Get an empty stream or a stream with authors depend on book is null or not
-        Stream<String> authors = book == null ? Stream.empty() : book.authors.stream();
+        Stream<String> authors = book == null ? Stream.empty() : book.getAuthors().stream();
 
         //Now in Java 9
         return Stream.ofNullable(getPossiblyNull(true)) //Get a stream of objects or of a null
-                .flatMap(b -> b.authors.stream()); //Flatmap the authors
+                .flatMap(b -> b.getAuthors().stream()); //Flatmap the authors
     }
 
     public static Stream<String> exampleOfNullableWhenBookIsNotNull(){
@@ -25,11 +25,11 @@ public class OfNullableReview {
         //Get the book as not null
         Book book = getPossiblyNull(false);
         //Get an empty stream or a stream with authors depend on book is null or not
-        Stream<String> authors = book == null ? Stream.empty() : book.authors.stream();
+        Stream<String> authors = book == null ? Stream.empty() : book.getAuthors().stream();
 
         //Now in Java 9
         return Stream.ofNullable(getPossiblyNull(false)) //Get a stream of objects or of a null
-                .flatMap(b -> b.authors.stream()); //Flatmap the authors
+                .flatMap(b -> b.getAuthors().stream()); //Flatmap the authors
     }
 
     private static Book getPossiblyNull(boolean isNull) {

@@ -5,18 +5,14 @@ import java.util.stream.Stream;
 
 public class Book implements PricedObject {
 
-    public final String title;
-    public final Set<String> authors;
-    public final double price;
+    private final String title;
+    private final Set<String> authors;
+    private final double price;
 
     public Book(String title, Set<String> authors, double price) {
         this.title = title;
         this.authors = authors;
         this.price = price;
-    }
-
-    public String getTitle() {
-        return title;
     }
 
     public Set<String> getAuthors() {
@@ -36,12 +32,4 @@ public class Book implements PricedObject {
         return Stream.of(getBook());
     }
 
-    @Override
-    public String toString() {
-        return "Book{" +
-                "title='" + title + '\'' +
-                ", authors=" + authors +
-                ", price=" + price +
-                '}';
-    }
 }
