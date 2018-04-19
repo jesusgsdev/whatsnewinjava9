@@ -1,6 +1,8 @@
-package com.jesusgsdev;
+package com.jesusgsdev.enhancements;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+import com.jesusgsdev.enhancements.StreamsReview;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package com.jesusgsdev.helpers;
+package com.jesusgsdev.enhancements.helpers;
 
 public interface PricedObject {
 

@@ -1,12 +1,11 @@
-package com.jesusgsdev;
+package com.jesusgsdev.enhancements;
 
+import com.jesusgsdev.enhancements.LocalDateReview;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Optional;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;

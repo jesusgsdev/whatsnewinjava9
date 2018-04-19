@@ -1,6 +1,6 @@
-package com.jesusgsdev;
+package com.jesusgsdev.enhancements;
 
-import com.jesusgsdev.helpers.Book;
+import com.jesusgsdev.enhancements.helpers.Book;
 
 import java.util.Map;
 import java.util.Set;
