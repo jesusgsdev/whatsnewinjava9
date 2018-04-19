@@ -8,8 +8,6 @@ Link here: http://www.oracle.com/technetwork/java/javase/downloads/jdk9-download
 If you want to know how to install several Java versions in your MacOS system please
 checkout this guide: https://gist.github.com/ntamvl/5f4dbaa8f68e6897b99682a395a44c2e
 
-# Java 9 Enhancements
-
 ## Collections
 
 Initialize a List, Set or Map with less verbosity:
@@ -89,10 +87,7 @@ Allows to handle specific StackFrames. There is not examples in the code.
 There is no examples in the code for this improvements as they apply if you compile with Java 9.
 
 
-## Java 9 Modules creation
-
 ### References
 
 - Java 9 Optional API Additions: http://www.baeldung.com/java-9-optional
-- What's new in Java 9: https://pluralsight.com/library/courses/java-9-whats-new
-- Java 9 Modularity: First Look: https://pluralsight.com/library/courses/java-9-modularity-first-look
+- What's new in Java 9: https://app.pluralsight.com/library/courses/java-9-whats-new

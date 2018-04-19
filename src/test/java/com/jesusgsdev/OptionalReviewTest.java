@@ -1,6 +1,5 @@
-package com.jesusgsdev.enhancements;
+package com.jesusgsdev;
 
-import com.jesusgsdev.enhancements.OptionalReview;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

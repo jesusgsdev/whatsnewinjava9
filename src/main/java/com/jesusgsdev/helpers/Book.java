@@ -1,4 +1,4 @@
-package com.jesusgsdev.enhancements.helpers;
+package com.jesusgsdev.helpers;
 
 import java.util.Set;
 import java.util.stream.Stream;

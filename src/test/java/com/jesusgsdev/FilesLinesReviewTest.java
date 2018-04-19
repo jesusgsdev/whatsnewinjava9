@@ -1,10 +1,10 @@
-package com.jesusgsdev.enhancements;
+package com.jesusgsdev;
 
-import com.jesusgsdev.enhancements.FilesLinesReview;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
+import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
