@@ -78,4 +78,18 @@ public class OptionalReviewTest {
         assertEquals(expected, result.get());
     }
 
+    @Test
+    @DisplayName("Usage of the method or on an Optional empty object")
+    public void givenOptionalWhenNotPresentThenShouldTakeAValueFromIt() {
+        //Given
+        Optional<String> value = Optional.empty();
+        Optional<String> defaultValue = Optional.of("default");
+
+        //When
+        Optional<String> result = value.or(() -> defaultValue);
+
+        //Then
+        assertEquals("default", result.get());
+    }
+
 }
