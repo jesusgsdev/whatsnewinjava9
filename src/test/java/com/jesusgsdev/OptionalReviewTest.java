@@ -48,6 +48,22 @@ public class OptionalReviewTest {
     }
 
     @Test
+    @DisplayName("Usage of the method ifPresentOrElse on an Optional empty object")
+    public void givenOptionalWhenNotPresentThenShouldExecuteProperCallback() {
+        //Given
+        Optional<String> value = Optional.empty();
+        AtomicInteger successCounter = new AtomicInteger(0);
+        AtomicInteger onEmptyOptionalCounter = new AtomicInteger(0);
+
+        //When
+        value.ifPresentOrElse(v -> successCounter.incrementAndGet(), onEmptyOptionalCounter::incrementAndGet);
+
+        //Then
+        assertEquals(0, successCounter.get());
+        assertEquals(1, onEmptyOptionalCounter.get());
+    }
+
+    @Test
     @DisplayName("Usage of the method or on an Optional object")
     public void givenOptionalWhenPresentThenShouldTakeAValueFromIt() {
         //Given
