@@ -90,4 +90,4 @@ There is no examples in the code for this improvements as they apply if you comp
 ### References
 
 - Java 9 Optional API Additions: http://www.baeldung.com/java-9-optional
-- What's new in Java 9: https://app.pluralsight.com/library/courses/java-9-whats-new
+- What's new in Java 9: https://pluralsight.com/library/courses/java-9-whats-new
